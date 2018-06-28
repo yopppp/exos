@@ -1,0 +1,109 @@
+body{
+    margin: 10px 0;
+    padding: 0;
+    text-align: center; /* EMMET tac + tab */
+    font-family: 'PT Sans', sans-serif;
+    background: #dea; /*#dea raccourci de DDEEAA*/
+}
+
+div#conteneur{
+    width: 770px; /* lLargeur*/
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #ab4;
+    background: #fff;
+}
+
+h1#header{
+    height: 258px; /*personnalise la hauteur du titre*/
+    background: url(../../htmlcss/img/apple.jpg) no-repeat left top; /* image de fond qui ne se répète pas, positionnée à gauche en haut*/
+    margin: 0; /*EMMET margin: 0; => m0 + tab */
+    }
+    h1#header a{
+        width: 400px;
+        height: 70px;
+        display: block;
+        background: url(../../htmlcss/img/title.gif) no-repeat; /* EMMET => bgu + tab */
+        position: relative; /* je règle sa position par rapport à la balise parent*/
+        left: 350px;
+        top: 15px;
+        text-indent: -5000px; /* text-indent => retrait ici je sors le texte de l'ecran pour ne pas gêner l'image */
+    }
+
+ul#menu{
+    /* je donne à mon menu la même hauteur que l'image que je vais utiliser*/
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    background: url(../../htmlcss/img/bg_menu.gif) repeat-x 0 -25px; /*repeat-x => l'image honrizontalement (axe x) - 0 => aucun décalage à gauche - et -25px remonte l'image*/
+    list-style-type: none; /* EMMET => Lst + tab - on cache les puces*/
+    }
+    ul#menu li{
+        float: left; /* aligne les Li sur la même ligne */
+        text-align: center; /*  EMMET => tac + tab */
+    }
+        ul#menu li a{
+            width: 130px;
+            line-height: 25px;
+            font-size: 1.2em;
+            font-weight: bold; /* caracteres en gras - EMMET => fwb + tab */
+            letter-spacing: 2px; /* espaces entre les letttres*/
+            color: #ffffff;
+            display: block; /* EMMET => tdn + tab */
+            text-decoration: none; /* supprime l'affichage par défaut ici d'un lien( bleu souligné) - EMMET => tdn + tab */
+            border-right: 2px solid #dea;
+        }
+        ul#menu li a:hover{
+            background: url(../../htmlcss/img/bg_menu.gif) repeat-x 0 0;
+        }
+
+
+
+div#contenu{
+    padding: 0 30px 0 100px; /* haut droite bas gauche */
+    background-image: url(../../htmlcss/img/bg_page.gif);
+    /* EMMET background-image: urL() => bgi + tab */
+    background-repeat: no-repeat;
+    /* EMMET background-repeat => bgr + tab */
+    background-position: 15px 15px; /* crée un espace à, gauche et à droite de l'image*/
+    }
+    div#contenu h2{
+        padding-left: 25px; /* décale le texte par rapport à l'image*/
+        /* EMMET padding-left => pL + tab */
+        line-height: 25px; /* hauteur de ligne*/
+        /* EMMET line-height => Lh + tab */
+        font-size: 1.4em;
+        /*EMMET font-size => fz + tab */
+        background: url(../../htmlcss/img/little_apple.gif) no-repeat left bottom;
+        color: #9b2;
+        border-bottom: 1px solid #9b2;
+        /*EMMET order-bottom => bb + tab */
+    }
+    div#contenu h3{
+        margin-left: 15px;
+        /* EMMET margin-left => mL + tab */
+        padding-left: 5px;
+        border-bottom: 1px solid #9b2;
+        border-left: 3px solid #9b2;
+        color: #99bb22; /* EMMET c#9b2 + tab */
+    }
+    div#contenu p{ /* paragraphes plus aérés*/
+        text-align: justify; /* EMMET => taj + tab*/
+        text-indent: 2em; /* EMMET=> ti + tab */
+        line-height: 1.7em; /*EMMET => Lh + tab */
+    }
+
+    div#contenu a{ /* mise en forme des liens*/
+    
+    color: #88aa00;
+    }
+    div#contenu a:hover{ /* change La couleur au survol de la souris avec la pseudo classe css :hover*/
+        color: #99bb22;
+    }
+p#footer{
+    margin: 0; /*EMMET => m0 + tab */
+    padding-right: 10px; /*EMMET => pr + tab */
+    line-height: 30px;
+    text-align: right;
+    color: #88aa00;
+}

@@ -1,0 +1,31 @@
+.c1, .c2, .c3, .c4, .c5, .c6{
+    height: 10em;
+    width: 10em;
+    border: 0.2em solid; /* rappel: border attend 3 valeurs (taille, style et couleur) => si je n'indique pas de couleur par défaut j'aurai du noir */
+    margin: 0.2em;
+    float: left;
+    text-align: center;
+    border-radius: 20%
+}
+.c1{
+    background-color: green;
+    border-radius: 40%
+}
+.c2{
+    background-color: aqua;
+    border-radius: 30% 45% 2% 25%}
+.c3{
+    background-color:greenyellow;
+}
+.c4{
+    background-color: bisque;
+}
+.c5{
+    background-color: red;
+}
+.c6{
+    border: white;
+}
+.clear{
+    clear: both; /* annule l'effet flottant du 'float: Left' et du 'float: right'*/
+}

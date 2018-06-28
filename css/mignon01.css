@@ -1,0 +1,27 @@
+body{
+    width: 50%; /* largeur de ma page=> 50% de l'ecran*/
+    margin: 0 auto; /* je centre mon tableau en utilisant les marges automatiques */
+}
+
+table{
+    
+    width: 50em; /* largeur du tableau par rapport à son contenant donc ici le body => règle de l'héritage en CSS*/
+    height: 70em;
+    border-collapse: collapse; /*par défaut les bordures des tableaux ont 2 traits=> pour qu'il n'y en ait qu'un on utilise la valeur collapse*/
+}
+
+
+
+
+.jaune{
+    background: yellow
+}
+.gris{
+    background: grey
+}
+.noir{
+    background: black
+}
+.bleu{
+    background: blue
+}
